@@ -32,9 +32,16 @@ body {
     align-items: center;
     height: 100vh;
 
-    div {
+    &>div {
         margin: 40px 0;
     }
+}
+
+h1 {
+    text-transform: uppercase;
+    margin: 0;
+    padding: 20px 0;
+    font-size: 50px;
 }
 
 /* Buttons */
@@ -56,4 +63,10 @@ body {
             border-color: $color-background;
          }
     }
+}
+
+#messages {
+    font-size: 40px;
+    display: flex;
+    justify-content: space-around;
 }

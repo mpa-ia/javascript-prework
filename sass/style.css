@@ -26,8 +26,15 @@ body {
   height: 100vh;
 }
 
-.row div {
+.row > div {
   margin: 40px 0;
+}
+
+h1 {
+  text-transform: uppercase;
+  margin: 0;
+  padding: 20px 0;
+  font-size: 50px;
 }
 
 /* Buttons */
@@ -49,4 +56,10 @@ body {
 #buttons i:hover {
   color: #F8EFBA;
   border-color: #F8EFBA;
+}
+
+#messages {
+  font-size: 40px;
+  display: flex;
+  justify-content: space-around;
 }
