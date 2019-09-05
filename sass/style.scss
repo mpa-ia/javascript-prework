@@ -1,0 +1,72 @@
+/* Variables */
+
+$color-main: #2C3A47;
+$color-background: #F8EFBA;
+$color-text: #fff;
+
+$font-global: 'Noto Sans SC', sans-serif;;
+
+/* Global */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+body {
+    color: $color-text;
+    background-color: $color-background;
+    margin: 0;
+    font-family: $font-global;
+    font-weight: 900;
+    text-align: center;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: $color-main;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+
+    &>div {
+        margin: 40px 0;
+    }
+}
+
+h1 {
+    text-transform: uppercase;
+    margin: 0;
+    padding: 20px 0;
+    font-size: 50px;
+}
+
+/* Buttons */
+
+#buttons {
+    display: flex;
+    flex-direction: column;
+    
+    i {
+        font-size: 70px;
+        line-height: 100px;
+        border: 3px solid $color-text;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        margin-top: 40px;
+        &:hover {
+            color: $color-background;
+            border-color: $color-background;
+         }
+    }
+}
+
+#messages {
+    font-size: 40px;
+    display: flex;
+    justify-content: space-around;
+}
