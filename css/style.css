@@ -1,0 +1,35 @@
+/* Variables */
+/* Global */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  color: #fff;
+  background-color: #F8EFBA;
+  margin: 0;
+  font-family: "Noto Sans SC", sans-serif;
+  font-weight: 900;
+  text-align: center;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #2C3A47;
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 100vh;
+}
+
+.row div {
+  margin: 40px 0;
+}
+/*# sourceMappingURL=style.css.map */

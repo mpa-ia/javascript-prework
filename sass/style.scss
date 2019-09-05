@@ -1,0 +1,38 @@
+/* Variables */
+
+$color-main: #2C3A47;
+$color-background: #F8EFBA;
+$color-text: #fff;
+
+$font-global: 'Noto Sans SC', sans-serif;;
+
+/* Global */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+body {
+    color: $color-text;
+    background-color: $color-background;
+    margin: 0;
+    font-family: $font-global;
+    font-weight: 900;
+    text-align: center;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: $color-main;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+
+    div {
+        margin: 40px 0;
+    }
+}
