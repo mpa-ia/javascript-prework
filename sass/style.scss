@@ -36,3 +36,24 @@ body {
         margin: 40px 0;
     }
 }
+
+/* Buttons */
+
+#buttons {
+    display: flex;
+    flex-direction: column;
+    
+    i {
+        font-size: 70px;
+        line-height: 100px;
+        border: 3px solid $color-text;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        margin-top: 40px;
+        &:hover {
+            color: $color-background;
+            border-color: $color-background;
+         }
+    }
+}
