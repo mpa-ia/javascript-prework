@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
 	<meta charset="UTF-8">
 	<title>Kamień, papier, nożyce</title>
@@ -8,17 +8,27 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<div class="container">
-		<h1>Let's play the game</h1>
-		<div class="row">
-			<div id="buttons">
-				<i class="fas fa-hand-rock" id="play-rock"></i>
-				<i class="fas fa-hand-paper" id="play-paper"></i>
-				<i class="fas fa-hand-scissors" id="play-scissors"></i>
-			</div>
-			<div id="messages"></div>
+	<section>
+		<div class="container">
+			<article>
+				<h1>Let's play the game</h1>
+				<div class="row">
+					<div id="buttons">
+						<i class="fas fa-hand-rock" id="play-rock"></i>
+						<i class="fas fa-hand-paper" id="play-paper"></i>
+						<i class="fas fa-hand-scissors" id="play-scissors"></i>
+					</div>
+				</div>	
+			</article>
+			<article>
+				<div class="headers">
+					<h2>Mój ruch to:</h2>
+					<h2>Twój ruch to:</h2>
+				</div>
+				<div id="messages"></div>
+			</article>
 		</div>
-	</div>
+	</section>
 	<script src="js/functions.js"></script>
 	<script src="js/script.js"></script>
 </body>

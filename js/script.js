@@ -1,6 +1,12 @@
+let computerWon = 0;
+let playerWon = 0;
+let roundNumber = 0;
 
 function playGame (playerInput) {
     clearMessages();
+
+    roundNumber++;
+    
 
     function getMoveName (argNumber) {
         if(argNumber == '1'){
@@ -17,9 +23,11 @@ function playGame (playerInput) {
         console.log('Argumenty funkcji: ', argComputerMove, argPlayerMove);
     
         if (argComputerMove == 'kamień' && argPlayerMove == 'papier' || argComputerMove == 'papier' && argPlayerMove == 'nożyce' || argComputerMove == 'nożyce' && argPlayerMove == 'kamień') {
-            printMessage('Ty wygrywasz!');
+            printMessage('Ty wygrywasz rundę!');
+            playerWon++;
         } else if (argComputerMove == 'papier' && argPlayerMove == 'kamień' || argComputerMove == 'kamień' && argPlayerMove == 'nożyce' || argComputerMove == 'nożyce' && argPlayerMove == 'papier') {
-            printMessage('Przegrywasz!');
+            printMessage('Przegrywasz rundę!');
+            computerWon++;
         } else if (argComputerMove == argPlayerMove) {
             printMessage('Remis!');
         } else {
@@ -31,12 +39,15 @@ function playGame (playerInput) {
     console.log('Wylosowana liczba to: ' + randomNumber);
     
     let computerMove = getMoveName(randomNumber);
-    printMessage('Mój ruch to: ' + computerMove);
+    printMessage(computerMove);
 
-    let playerMove = getMoveName(playerInput);
-    printMessage('Twój ruch to: ' + playerMove);
-    
+    let playerMove = getMoveName(playerInput); 
+    printMessage(playerMove);
+
     displayResult(computerMove, playerMove);
+    printMessage(computerWon + ":" + playerWon);
+    printMessage("Runda: " + roundNumber);
+
 }
 
 document.getElementById('play-rock').addEventListener('click', function () {playGame(1)});
