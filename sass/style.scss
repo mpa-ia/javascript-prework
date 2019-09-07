@@ -57,6 +57,24 @@ h2 {
     font-size: 36px;
 }
 
+/* New game button */
+
+button {
+    font-size: 26px;
+    text-transform: uppercase;
+    background: $color-back;
+    color: #000;
+    width: 200px;
+    height: 50px;
+    padding: 0;
+    border: none;
+    &:hover {
+        color: $color-decorator;
+        border: 2px solid $color-decorator;
+    }
+
+}
+
 /* Buttons */
 
 #buttons {

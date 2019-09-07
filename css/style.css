@@ -50,6 +50,23 @@ h2 {
   font-size: 36px;
 }
 
+/* New game button */
+button {
+  font-size: 26px;
+  text-transform: uppercase;
+  background: #ced6e0;
+  color: #000;
+  width: 200px;
+  height: 50px;
+  padding: 0;
+  border: none;
+}
+
+button:hover {
+  color: #ff4757;
+  border: 2px solid #ff4757;
+}
+
 /* Buttons */
 #buttons {
   display: -ms-flexbox;
