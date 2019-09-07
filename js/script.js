@@ -59,15 +59,15 @@ function newGame () {
 
 document.getElementById('new-game').addEventListener('click', function () {newGame()});
 
-document.getElementById('play-rock').addEventListener('click', playGame(1));
+document.getElementById('play-rock').addEventListener('click', function () {playGame(1)});
 document.getElementById('play-paper').addEventListener('click', function() {playGame(2)});
 document.getElementById('play-scissors').addEventListener('click', function () {playGame(3)});
 
 if (roundNumber >= 12) {
 
-    document.getElementById('play-rock').click = null;
-    document.getElementById('play-paper').click = null;
-    document.getElementById('play-scissors').click = null;
+    document.getElementById('play-rock').removeEventListener('click', playGame(1));
+    document.getElementById('play-paper').removeEventListener('click', playGame(2));
+    document.getElementById('play-scissors').removeEventListener('click', playGame(3));
     printMessage(computerWon + ":" + playerWon);
 
     if (playerWon>computerWon) {
