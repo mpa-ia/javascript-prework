@@ -1,7 +1,7 @@
 {
         let computerWon = 0, 
-        playerWon = 0, 
-        roundNumber = 0;
+            playerWon = 0, 
+            roundNumber = 0;
 
     function playGame (playerInput) {
         clearMessages();
@@ -34,7 +34,6 @@
             }
         }
 
-        
         let randomNumber = Math.floor(Math.random() * 3 + 1),
             computerMove = getMoveName(randomNumber), 
             playerMove = getMoveName(playerInput); 
@@ -44,7 +43,7 @@
         
         console.log('Wylosowana liczba to: ' + randomNumber);
         console.log('Wybór użytkownika: ' + playerMove);
-        
+
         printMessage("Runda: " + roundNumber);
         console.log('Runda: ' + roundNumber);
 
@@ -53,13 +52,12 @@
         
     }
 
-    function newGame () {
+    const newGame = function () {
         clearMessages();
         computerWon = 0;
         playerWon = 0;
         roundNumber = 0;
     }
-
 
     document.getElementById('new-game').addEventListener('click', function () {newGame()});
 
