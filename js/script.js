@@ -3,7 +3,7 @@
             playerWon = 0, 
             roundNumber = 0;
 
-    function playGame (playerInput) {
+    const playGame = function (playerInput) {
         clearMessages();
 
         roundNumber++;
