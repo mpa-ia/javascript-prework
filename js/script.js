@@ -32,7 +32,7 @@
             }
         }
 
-        let randomNumber = Math.floor(Math.random() * 3 + 1),
+        const randomNumber = Math.floor(Math.random() * 3 + 1),
             computerMove = getMoveName(randomNumber), 
             playerMove = getMoveName(playerInput); 
 
