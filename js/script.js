@@ -1,6 +1,6 @@
-let computerWon = 0;
-let playerWon = 0;
-let roundNumber = 0;
+let computerWon = 0, 
+    playerWon = 0, 
+    roundNumber = 0;
 
 function playGame (playerInput) {
     clearMessages();
