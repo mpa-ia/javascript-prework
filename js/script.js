@@ -8,15 +8,13 @@
 
         roundNumber++;
     
-        function getMoveName (argNumber) {
+        const getMoveName = function (argNumber) {
             if(argNumber == '1'){
                 return 'kamień';
             } else if (argNumber == '2') {
                 return 'papier';
-            } else if (argNumber == '3') {
-                return 'nożyce';
-            }
-            return 'Nieznany ruch';
+            } 
+            return 'nożyce';
         }
         
         function displayResult (argComputerMove, argPlayerMove) {
