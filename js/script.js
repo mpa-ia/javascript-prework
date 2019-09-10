@@ -17,7 +17,7 @@
             return 'nożyce';
         }
         
-        function displayResult (argComputerMove, argPlayerMove) {
+        const displayResult = function (argComputerMove, argPlayerMove) {
             console.log('Argumenty funkcji: ', argComputerMove, argPlayerMove);
         
             if (argComputerMove == argPlayerMove) {
