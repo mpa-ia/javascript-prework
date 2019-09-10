@@ -35,14 +35,15 @@
         }
 
         
-        let randomNumber = Math.floor(Math.random() * 3 + 1);
-        console.log('Wylosowana liczba to: ' + randomNumber);
-            
-        let computerMove = getMoveName(randomNumber);
+        let randomNumber = Math.floor(Math.random() * 3 + 1),
+            computerMove = getMoveName(randomNumber), 
+            playerMove = getMoveName(playerInput); 
+
         printMessage(computerMove);
-        
-        let playerMove = getMoveName(playerInput); 
         printMessage(playerMove);
+        
+        console.log('Wylosowana liczba to: ' + randomNumber);
+        console.log('Wybór użytkownika: ' + playerMove);
         
         printMessage("Runda: " + roundNumber);
         console.log('Runda: ' + roundNumber);
